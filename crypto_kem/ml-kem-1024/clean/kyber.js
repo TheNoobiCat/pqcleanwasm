@@ -1,4 +1,4 @@
-var Module = (() => {
+var InitKyber = (() => {
   var _scriptName = typeof document != 'undefined' ? document.currentScript?.src : undefined;
   return (
 async function(moduleArg = {}) {
@@ -12,9 +12,9 @@ var Module=moduleArg;var ENVIRONMENT_IS_WEB=true;var ENVIRONMENT_IS_WORKER=false
 );
 })();
 if (typeof exports === 'object' && typeof module === 'object') {
-  module.exports = Module;
+  module.exports = InitKyber;
   // This default export looks redundant, but it allows TS to import this
   // commonjs style module.
-  module.exports.default = Module;
+  module.exports.default = InitKyber;
 } else if (typeof define === 'function' && define['amd'])
-  define([], () => Module);
+  define([], () => InitKyber);
