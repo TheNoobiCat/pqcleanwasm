@@ -1,3 +1,5 @@
+ml-kem-1024 compiled to wasm using Emscripten. see `crypto_kem\ml-kem-1024\kyber.js` and `crypto_kem\ml-kem-1024\kyber.wasm`
+
 # PQClean
 
 _[See the build status for each component here](.github/workflows/BADGES.md)_
